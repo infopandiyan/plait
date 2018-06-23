@@ -1,0 +1,9 @@
+@mixin fontFace($family,$src,$style: normal,$weight: normal) {
+	@font-face {
+		font-family: $family;
+		src: url('#{$src}.woff') format('woff'); // legacy iOS
+
+		font-style: $style;
+		font-weight: $weight;
+	}
+}
