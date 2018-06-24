@@ -7,7 +7,7 @@
   height: 100vh;
 }
 .section-intro {
-  padding: 40px 0 60px;
+  padding: 0px 0 60px;
   background: #ffffff;
   h1 {
     font-size: 32px;
@@ -48,4 +48,45 @@
       cursor: pointer;
     }
   }
+}
+.homepage {
+  .home_banner{
+    padding: 0px;
+  }
+  .header-topnav{
+    position: fixed; 
+    width: 100%;
+    margin-bottom: 65px;
+    background-color: #ffffffb5;
+  }
+  .topbar-branding{
+    height: 65px;
+    width: 35%;
+  }
+  .topnav ul.menu {
+    float: left;
+    height: 48px;
+    padding-left: 200px;
+}
+.home_banner img{
+  width: 100%;
+ // height: 400px;
+}
+  .header-topnav .topbar-branding{
+   
+    text-align: right;
+  }
+  @media (max-width: 767px) {
+    .topbar-branding {
+      height: auto !important;
+      width: 100%;
+      }
+      .header-topnav .topbar-branding img {
+        height: 100%;
+        width: 100%;
+    }
+    }
+    .topnav ul.menu > li > div > a, .topnav ul.menu > li > div > div{
+      font-weight: bold;
+    }
 }
