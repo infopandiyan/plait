@@ -57,11 +57,11 @@
     position: fixed; 
     width: 100%;
     margin-bottom: 65px;
-    background-color: #ffffffb5;
+    background-color: #1d1b1beb;
   }
   .topbar-branding{
     height: 65px;
-    width: 35%;
+    width: 31%;
   }
   .topnav ul.menu {
     float: left;
@@ -76,7 +76,7 @@
    
     text-align: right;
   }
-  @media (max-width: 767px) {
+  @media (min-width: 551px) and (max-width: 767px) {
     .topbar-branding {
       height: auto !important;
       width: 100%;
@@ -86,7 +86,18 @@
         width: 100%;
     }
     }
+    @media (max-width: 550px) {
+      .topbar-branding {
+       // height: auto !important;
+        width: 140px;
+        }
+        .header-topnav .topbar-branding img {
+          height: 100%;
+          max-width: none;
+      }
+      }
     .topnav ul.menu > li > div > a, .topnav ul.menu > li > div > div{
       font-weight: bold;
+      color:#ffffff;
     }
 }
